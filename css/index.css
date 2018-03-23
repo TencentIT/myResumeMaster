@@ -1,0 +1,341 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background: #EEEEEE;
+  font-size: 14px;
+  color: #2f2f2f;
+  font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #437ABE; }
+
+a:hover {
+  text-decoration: underline;
+  color: #37649c; }
+
+ul, li {
+  list-style: none; }
+
+div, aside, header, section {
+  box-sizing: border-box; }
+
+aside#sidebar {
+  width: 25%;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed; }
+  aside#sidebar header {
+    background: #31518C;
+    padding-top: 20px;
+    box-shadow: 0.278px 1.981px 39.56px 3.44px rgba(193, 192, 192, 0.83);
+    text-align: center; }
+    aside#sidebar header div.avatar {
+      background: #FFFFFF;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      box-shadow: 0.349px 4.988px 115.2px 12.8px rgba(82, 81, 81, 0.33); }
+      aside#sidebar header div.avatar img {
+        width: 100%;
+        height: inherit;
+        border-radius: 100%; }
+    aside#sidebar header div.text {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      aside#sidebar header div.text h1 {
+        color: #FFFFFF; }
+      aside#sidebar header div.text p {
+        color: #FFFFFF; }
+  aside#sidebar section#skill {
+    padding: 20px 10%;
+    overflow-y: scroll; }
+    aside#sidebar section#skill h2 {
+      font-family: 微软雅黑;
+      color: #6d6d6d; }
+    aside#sidebar section#skill ul#list-skill {
+      height: 300px;
+      display: block;
+      list-style-type: none; }
+      aside#sidebar section#skill ul#list-skill li {
+        display: block;
+        padding: 5px 0; }
+        aside#sidebar section#skill ul#list-skill li h3 {
+          color: #6d6d6d;
+          font-size: 18px;
+          padding: 5px 0; }
+        aside#sidebar section#skill ul#list-skill li div.level {
+          width: 100%;
+          height: 10px;
+          background: #e0e0e0;
+          border-radius: 10px;
+          overflow: hidden; }
+          aside#sidebar section#skill ul#list-skill li div.level div.level-90 {
+            background: #31518C;
+            width: 90%;
+            height: 10px; }
+          aside#sidebar section#skill ul#list-skill li div.level div.level-80 {
+            background: #31518C;
+            width: 85%;
+            height: 10px; }
+          aside#sidebar section#skill ul#list-skill li div.level div.level-70 {
+            background: #31518C;
+            width: 80%;
+            height: 10px; }
+
+div#container {
+  width: 75%;
+  position: relative;
+  left: 25%; }
+
+header#head {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  padding: 10px 0;
+  box-shadow: 0 0 27px 0 rgba(182, 182, 182, 0.83); }
+  header#head:after {
+    content: '';
+    display: block;
+    clear: both; }
+  header#head div#contact-me, header#head div#about-me {
+    float: left;
+    padding: 20px 30px;
+    width: 50%; }
+    header#head div#contact-me h1, header#head div#about-me h1 {
+      color: #31518C; }
+    header#head div#contact-me p, header#head div#about-me p {
+      color: #8a8a8a;
+      font-size: 16px; }
+  header#head div#contact-me ul.list-contact {
+    list-style-type: none; }
+    header#head div#contact-me ul.list-contact li {
+      display: block;
+      font-size: 16px;
+      color: #8a8a8a;
+      padding: 3px 0; }
+      header#head div#contact-me ul.list-contact li i {
+        margin-right: 7px;
+        color: #000; }
+      header#head div#contact-me ul.list-contact li a {
+        font-size: 18px; }
+  header#head div#about-me {
+    border-left: 1px solid #CCCCCC; }
+  header#head li {
+    font-size: 16px; }
+
+section#bio {
+  background: #FFFFFF;
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0.14px 1.995px 26.68px 2.32px rgba(179, 176, 176, 0.28); }
+  section#bio div.img-full {
+    width: 100%;
+    height: 400px;
+    position: relative; }
+    section#bio div.img-full img.illustartion {
+      width: 100%;
+      height: inherit; }
+    section#bio div.img-full span.bio-icon {
+      position: absolute;
+      left: 60px;
+      top: 10px;
+      color: #FFFFFF;
+      font-size: 30px;
+      letter-spacing: 2px; }
+      section#bio div.img-full span.bio-icon i.icon {
+        font-size: 50px;
+        position: relative;
+        top: 10px;
+        margin-right: 10px;
+        display: inline-block; }
+    section#bio div.img-full div.avatar {
+      background: #FFFFFF;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      bottom: -75px;
+      left: 40px;
+      z-index: 100;
+      border-radius: 100%;
+      box-shadow: 0.278px 1.981px 39.56px 3.44px rgba(193, 192, 192, 0.83); }
+      section#bio div.img-full div.avatar img {
+        width: 100%;
+        height: inherit;
+        border-radius: 100%; }
+  section#bio div.desc {
+    padding: 10px 10%; }
+    section#bio div.desc div.title-name {
+      padding-left: 20%;
+      position: relative; }
+      section#bio div.desc div.title-name span.icon {
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 10px; }
+        section#bio div.desc div.title-name span.icon i {
+          font-size: 40px;
+          color: #b9b9b9; }
+    section#bio div.desc div.biodata {
+      padding: 30px 0; }
+      section#bio div.desc div.biodata ul {
+        padding-left: 10px; }
+        section#bio div.desc div.biodata ul li {
+          font-size: 20px;
+          color: #666;
+          padding: 3px 0;
+          display: block; }
+          section#bio div.desc div.biodata ul li p {
+            font-weight: lighter;
+            padding-left: 20px; }
+    section#bio div.desc div.skill {
+      padding: 5px; }
+      section#bio div.desc div.skill ul.skill-list {
+        font-size: 16px;
+        margin: 0; }
+        section#bio div.desc div.skill ul.skill-list li {
+          list-style: square;
+          padding: 10px 0;
+          color: #333333; }
+    section#bio div.desc div.project div.project-title {
+      position: relative; }
+      section#bio div.desc div.project div.project-title span {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        color: #666; }
+      section#bio div.desc div.project div.project-title div.project-title-more {
+        position: absolute;
+        top: 8px;
+        right: 0; }
+    section#bio div.desc div.project div.project-list {
+      padding: 15px; }
+      section#bio div.desc div.project div.project-list ul {
+        margin-top: 0; }
+        section#bio div.desc div.project div.project-list ul li {
+          font-size: 16px;
+          line-height: 1.7;
+          list-style: decimal; }
+      section#bio div.desc div.project div.project-list h4 {
+        padding-top: 5px; }
+    section#bio div.desc div.appraisal {
+      padding: 20px 0; }
+      section#bio div.desc div.appraisal p {
+        line-height: 1.7;
+        padding: 0 20px;
+        font-size: 16px; }
+    section#bio div.desc div.social {
+      padding: 10px 0; }
+      section#bio div.desc div.social ul {
+        margin: 0; }
+        section#bio div.desc div.social ul li {
+          display: block; }
+          section#bio div.desc div.social ul li a {
+            font-size: 16px; }
+          section#bio div.desc div.social ul li i {
+            font-size: 18px;
+            padding: 10px; }
+    section#bio div.desc div.thanks p {
+      padding-left: 20px;
+      font-size: 16px; }
+    section#bio div.desc h2.desc-title {
+      padding: 5px;
+      color: #31518c; }
+
+hr.separator {
+  border: 1px solid #CCCCCC; }
+
+section.other {
+  height: 172px;
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  border: 0px none #333333; }
+  section.other ul.links {
+    margin: 0px;
+    padding: 0px; }
+    section.other ul.links li {
+      height: 36px;
+      width: 60px;
+      border-radius: 5px 0 0 5px;
+      margin: 8px 0px 0px;
+      text-align: center; }
+      section.other ul.links li div#add-weixin {
+        position: absolute;
+        left: -120px;
+        bottom: 10px;
+        display: none; }
+        section.other ul.links li div#add-weixin img {
+          width: 111px;
+          height: 111px; }
+        section.other ul.links li div#add-weixin p {
+          text-align: center; }
+      section.other ul.links li:hover div#add-weixin {
+        display: block; }
+      section.other ul.links li a {
+        color: #FFFFFF;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 3px;
+        display: inline-block;
+        border-radius: 5px 0 0 5px;
+        background: #31518c;
+        background: rgba(49, 81, 140, 0.8) none repeat scroll 0% 0%/auto padding-box border-box; }
+        section.other ul.links li a:hover {
+          background: #333333;
+          background: rgba(51, 51, 51, 0.8) none repeat scroll 0% 0%/auto padding-box border-box;
+          text-decoration: none; }
+      section.other ul.links li a#back-top {
+        opacity: 0; }
+
+@media (max-width: 767px) {
+  aside#sidebar {
+    width: 100%;
+    height: 700px;
+    position: static; }
+
+  div#container {
+    width: 100%;
+    position: static;
+    left: 0; }
+    div#container div#contact-me, div#container div#about-me {
+      float: none;
+      padding: 20px 30px;
+      width: 100%; }
+
+  section#bio div.img-full {
+    height: 200px; }
+    section#bio div.img-full div.avatar {
+      width: 55px;
+      height: 55px;
+      bottom: -22.5px;
+      left: 10px;
+      border-left: 0px; }
+    section#bio div.img-full span.bio-icon {
+      font-size: 18px;
+      left: 30px;
+      top: 20px; }
+      section#bio div.img-full span.bio-icon i.icon {
+        font-size: 30px;
+        top: 4px;
+        margin-right: 5px; }
+  section#bio div.desc {
+    padding: 10px; }
+    section#bio div.desc div.biodata ul li {
+      font-size: 16px; }
+
+  section.other {
+    display: none; } }
+
+/*# sourceMappingURL=index.css.map */

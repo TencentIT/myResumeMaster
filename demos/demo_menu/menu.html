@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>原生js树形下拉菜单/可定义伸缩菜单列表</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			a,img {
+				border: 0;
+				text-decoration: none;
+			}
+			
+			body {
+				font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+
+
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="css/sdmenu.css" />
+		<script src="js/sdmenu.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+/*
+功能说明: 
+	点击某个菜单项: 平滑打开/关闭此菜单项
+	可以限制只能同时打开一个菜单顶
+	可以保存当前菜单的状态: 再次访问时显示上次的打开状态
+ */
+			window.onload = function () {
+				new SlideMenu("my_menu").init();
+			};
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="my_menu" class="sdmenu">
+			<div>
+				<span>在线工具</span>
+				<a href="#">图像优化</a>
+				<a href="#">收藏夹图标生成器</a>
+				<a href="#">邮件出谜语的人</a>
+				<a href="#">htaccess密码</a>
+				<a href="#">梯度图像</a>
+				<a href="#">按钮生成器</a>
+			</div>
+			<div class="collapsed">
+				<span>支持我们</span>
+				<a href="#">推荐我们</a>
+				<a href="#">链接我们</a>
+				<a href="#">网络资源</a>
+			</div>
+			<div class="collapsed">
+				<span>合作伙伴</span>
+				<a href="#">JavaScript工具包</a>
+				<a href="#">CSS驱动</a>
+				<a href="#">CodingForums</a>
+				<a href="#">CSS例子</a>
+			</div>
+			<div class="collapsed">
+				<span>测试电流</span>
+				<a href="#">Current or not</a>
+				<a href="#">Current or not</a>
+				<a href="#">Current or not</a>
+				<a href="#">Current or not</a>
+			</div>
+		</div>
+	</body>
+</html>
